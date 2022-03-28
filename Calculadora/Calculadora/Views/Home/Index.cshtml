@@ -7,8 +7,12 @@
    <h4>Exemplificação da interação entre o <i>Cliente</i> e o <i>Servidor</i>.</h4>
 </div>
 
-<form method="post"> 
-
+<form method="post">
+    <!-- esta linha de comentário (HTML) vai ser vista no browser -->
+    @*  mas, esta já não será exportada para o browser...  *@
+    <input type="hidden" name="primeiroOperando" value="@ViewBag.PrimeiroOperando" />
+    <input type="hidden" name="operador" value="@ViewBag.Operador" />
+    <input type="hidden" name="limpaEcra" value="@ViewBag.LimpaEcra" />
 
 
   <table border="0"
@@ -93,4 +97,5 @@
          </td>
       </tr>
    </table>
-</form>
+
+   </form>
